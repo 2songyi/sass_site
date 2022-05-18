@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>xwood</title>
-    <link rel="stylesheet" href="../css/style.min.css">
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/common.js"></script>
-  </head>
-  <body class="subpage">
-    <div id="wrap">
-      <header id="header">
-        <!-- 로고 -->
-        <h1 id="top-logo">
-          <a href="../index.html">XWOOD</a>
-        </h1>
-        <!-- 메인메뉴 -->
-        <nav id="top-nav">
-          <ul>
-            <li>
-              <a href="../company/introduce.html">Company</a>
-              <ul class="sub-menu">
-                <li><a href="../company/introduce.html">Introduce</a></li>
-                <li><a href="../company/ci.html">CI</a></li>
-                <li><a href="../company/history.html">History</a></li>
-              </ul>
-            </li>
-            <li><a href="../product/product.html">Product</a>
-            </li>
-            <li><a href="../gallery/gallery.html">Gallery</a>
-            </li>
-            <li><a href="../community/notice.html">Community</a>
-              <ul class="sub-menu">
-                <li><a href="../community/notice.html">Notice</a></li>
-                <li><a href="../community/faq.html">FAQ</a></li>
-              </ul>
-            </li>
-            <li><a href="../location/location.html">Location</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <!-- content area-->
-        <div class="container">
-          <!-- 왼쪽 메뉴 -->
-          <aside id="lnb">
-            <ul>
-              <li><a class="on" href="../location/location.html">Location</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <title>xwood</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body class="subpage">
+  <div id="wrap">
+    <header id="header">
+      <!-- 로고 -->
+      <h1 id="top-logo">
+        <a href="../index.html">XWOOD</a>
+      </h1>
+      <!-- 메인메뉴 -->
+      <nav id="top-nav">
+        <ul>
+          <li>
+            <a href="../company/introduce.html">Company</a>
+            <ul class="sub-menu">
+              <li><a href="../company/introduce.html">Introduce</a></li>
+              <li><a href="../company/ci.html">CI</a></li>
+              <li><a href="../company/history.html">History</a></li>
             </ul>
-          </aside>
-          <!-- 컨텐츠 본문 영역 -->
-          <div class="content">
-            <h2 class="sub-title"><span>Location</span></h2>
-            <div class="inner">
-              <div id="wrap" style="width: 1000px; height: 350px; margin: 50px auto 0"></div>
-            </div>
+          </li>
+          <li><a href="../product/product.html">Product</a>
+          </li>
+          <li><a href="../gallery/gallery.html">Gallery</a>
+          </li>
+          <li><a href="../community/notice.html">Community</a>
+            <ul class="sub-menu">
+              <li><a href="../community/notice.html">Notice</a></li>
+              <li><a href="../community/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="../location/location.html">Location</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- content area-->
+      <div class="container">
+        <!-- 왼쪽 메뉴 -->
+        <aside id="lnb">
+          <ul>
+            <li><a class="on" href="../location/location.html">Location</a></li>
+          </ul>
+        </aside>
+        <!-- 컨텐츠 본문 영역 -->
+        <div class="content">
+          <h2 class="sub-title"><span>Location</span></h2>
+          <div class="inner">
+            <div id="map" style="width: 1000px; height: 350px; margin: 50px auto 0"></div>
           </div>
         </div>
-      </main>
-      <footer id="footer">
-        <!-- footer상단영역 -->
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="column footer-logo">
-                <!-- footer logo -->
-                <h3>Logo</h3>
-              </div>
-              <div class="column">
-                <h4>site map</h4>
-                <ul>
-                  <li>
-                    <a href="../company/introduce.html">Company</a>
-                  </li>
-                  <li><a href="../product/product.html">Product</a>
-                  </li>
-                  <li><a href="../gallery/gallery.html">Gallery</a>
-                  </li>
-                  <li><a href="../community/notice.html">Community</a>
-                  </li>
-                  <li><a href="../location/location.html">Location</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="column">
-                <h4>contact us</h4>
-                <p>
-                  A108 Adam street<br>
-                  New York, NY 535022<br>
-                  United States<br>
-                  <strong>Phone : </strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
-                  <strong>Email : </strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
-                </p>
-              </div>
-              <div class="column news">
-                <h4>news</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <form>
-                  <input type="text" name="search"><input type="submit" value="search">
-                  <!-- input한줄 띄우고 하면 공백생김 -->
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- footer하단영역 -->
+      </div>
+    </main>
+    <footer id="footer">
+      <!-- footer상단영역 -->
+      <div class="footer-top">
         <div class="container">
-          <div class="copyright">
-            &copy;copyright <strong>MyPage</strong> .All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed By <a href="mailto:5446911s2@daum.net">MySelf</a>
+          <div class="row">
+            <div class="column footer-logo">
+              <!-- footer logo -->
+              <h3>Logo</h3>
+            </div>
+            <div class="column">
+              <h4>site map</h4>
+              <ul>
+                <li>
+                  <a href="../company/introduce.html">Company</a>
+                </li>
+                <li><a href="../product/product.html">Product</a>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a>
+                </li>
+                <li><a href="../community/notice.html">Community</a>
+                </li>
+                <li><a href="../location/location.html">Location</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>contact us</h4>
+              <p>
+                A108 Adam street<br>
+                New York, NY 535022<br>
+                United States<br>
+                <strong>Phone : </strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
+                <strong>Email : </strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
+              </p>
+            </div>
+            <div class="column news">
+              <h4>news</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <form>
+                <input type="text" name="search"><input type="submit" value="search">
+                <!-- input한줄 띄우고 하면 공백생김 -->
+              </form>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+      <!-- footer하단영역 -->
+      <div class="container">
+        <div class="copyright">
+          &copy;copyright <strong>MyPage</strong> .All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed By <a href="mailto:5446911s2@daum.net">MySelf</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=80ac7d72303025c1884fd9a4adab5cff"></script>
+  <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+      mapOption = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+      };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+  </script>
+  <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+      mapOption = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+      };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다
+    var markerPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);
+  </script>
+</body>
+
 </html>

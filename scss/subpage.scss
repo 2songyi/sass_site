@@ -1,0 +1,71 @@
+// sub page
+body.subpage {
+  main {
+    .container {
+      display: flex;
+      // 왼쪽메뉴
+      #lnb {
+        flex: 230px;
+        flex-shrink: 0;
+        flex-grow: 0; //칸텐츠가 없어도 늘어나지않게
+        box-sizing: border-box;
+        padding-right: 50px;
+        ul {
+          li {
+            border-bottom: 1px solid $borderColorPrimary;
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              line-height: 50px;
+              font-size: $fontSizeMid;
+              box-sizing: border-box;
+              transition: .5s;
+              &:hover {
+                padding-left: 20px;
+              }
+              &.on {
+                color: #fff;
+                background: $gbtnColor;
+                padding-left: 20px;
+              }
+            }
+          }
+        }
+      }
+      // sub page title 영역
+      .sub-title {
+        & + .tbl-header {
+            margin-top: 50px;
+          }
+        span {
+          position: relative;
+          display: inline-block;
+          line-height: 43px;
+          padding-bottom: 8px;
+          &:after {
+            content:'';
+            position: absolute;
+            height: 3px;
+            background: $borderColorPrimary;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+      // page content영역
+      .inner {
+        & + .inner {
+          margin-top: 50px;
+          padding-top: 50px;
+          border-top: 1px solid $borderColorPrimary;
+        }
+        .box {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+}

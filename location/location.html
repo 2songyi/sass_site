@@ -134,12 +134,20 @@
     var marker = new kakao.maps.Marker({
       position: markerPosition
     });
+    var infowindow = new kakao.maps.InfoWindow({
+           content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+       });
+       infowindow.open(map, marker);
+
+       // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+       map.setCenter(coords);
 
     // 마커가 지도 위에 표시되도록 설정합니다
-    marker.setMap(map);
+    // marker.setMap(map);
 
     // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
     // marker.setMap(null);
+
   </script>
 </body>
 

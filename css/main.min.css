@@ -1,1 +1,1 @@
-.inner:nth-child(1){margin-top:50px;height:550px}
+.mainbanner{position:relative;display:block;height:550px;background-image:url("../img/main_banner.jpg");background-repeat:no-repeat;background-size:cover}.inner:nth-child(1){margin-top:50px}.inner .box.items_2 .itmes p+a{margin-top:50px}

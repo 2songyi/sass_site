@@ -56,6 +56,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
             top: calc(100% - 3px);
             opacity: 0;
             transition: .3s;
+            z-index: 500;
             li {
               width: 100%; //위에 folat:left, margin없애기 위해
               margin: 0;
@@ -88,7 +89,6 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
   #footer {
     margin-top: 50px;
     color: $fontColorPrimary;
-
     .footer-top {
       padding: 60px 0 30px;
     }
@@ -154,6 +154,9 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
             line-height: 26px;
           }
           &.news {
+            p {
+              margin-bottom: 20px;
+            }
             input[type=text] {
               border: 0;
               padding: 6px 8px;
